@@ -15,8 +15,9 @@ def corredor(id_corredor):
 def iniciarCarrera():
     print("Señal de salida en 2 segundos...")
     time.sleep(2) # simula un tiempo antes de activar el evento
-    salida.set() # Activa el evento
     print("¡Salida! Los corredores han comenzado.")
+    salida.set() # Activa el evento
+
 
 # Se crea e inicia los hilos para 5 corredores
 corredores = []
